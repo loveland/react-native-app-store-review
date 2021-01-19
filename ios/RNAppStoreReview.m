@@ -61,7 +61,7 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(requestReview:(NSString *) appIdentifier)
 {
-    if ([SKStoreReviewController class]) {
+    if (@available(iOS 10.3, *)) {        
         [SKStoreReviewController requestReview];
     } else if ([SKStoreProductViewController class]) {
         [self openStoreProductWithiTunesItemIdentifierWithinApp:appIdentifier];
