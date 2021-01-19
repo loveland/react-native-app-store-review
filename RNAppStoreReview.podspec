@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "jeremy.magrin@gmail.com" }
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/magrinj/react-native-app-store-review.git", :tag => "master" }
   s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
